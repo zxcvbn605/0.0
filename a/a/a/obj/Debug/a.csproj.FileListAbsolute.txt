@@ -180,3 +180,7 @@ C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\obj\Debug\a.csproj.CoreCompileI
 C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\obj\Debug\a.csproj.CopyComplete
 C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\obj\Debug\a.dll
 C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\obj\Debug\a.pdb
+C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\bin\PagedList.dll
+C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\bin\PagedList.Mvc.dll
+C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\bin\PagedList.xml
+C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\bin\PagedList.Mvc.xml
