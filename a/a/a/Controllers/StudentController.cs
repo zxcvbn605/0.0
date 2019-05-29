@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using a.DAL;
 using a.Models;
 using PagedList;
+using System.Data.Entity.Infrastructure;
 
 namespace a.Controllers
 {
@@ -103,7 +104,7 @@ namespace a.Controllers
                     return RedirectToAction("Index");
                 }
             }
-            catch (DataException /* dex */)
+            catch (RetryLimitExceededException /* dex */)
             {
                 //Log the error (uncomment dex variable name and add a line here to write a log.
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
@@ -194,10 +195,10 @@ namespace a.Controllers
                 db.Students.Remove(student);
                 db.SaveChanges();
             }
-            catch (DataException/* dex */)
+            catch (RetryLimitExceededException /* dex */)
             {
                 //Log the error (uncomment dex variable name and add a line here to write a log.
-                return RedirectToAction("Delete", new { id = id, saveChangesError = true });
+                ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
             }
             return RedirectToAction("Index");
         }
@@ -228,12 +229,12 @@ public ActionResult EditPost(int? id)
 
             return RedirectToAction("Index");
         }
-        catch (DataException /* dex */)
-        {
-            //Log the error (uncomment dex variable name and add a line here to write a log.
-            ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
-        }
-    }
+                catch (RetryLimitExceededException /* dex */)
+                {
+                    //Log the error (uncomment dex variable name and add a line here to write a log.
+                    ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists see your system administrator.");
+                }
+            }
     return View(studentToUpdate);
 }
     }

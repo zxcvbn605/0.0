@@ -184,3 +184,5 @@ C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\bin\PagedList.dll
 C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\bin\PagedList.Mvc.dll
 C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\bin\PagedList.xml
 C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\bin\PagedList.Mvc.xml
+C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\obj\Debug\a.Migrations.InitialCreate.resources
+C:\Users\CJCUTW\Source\Repos\zxcvbn605\0.0\a\a\a\obj\Debug\a.csproj.GenerateResource.cache
